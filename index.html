@@ -63,6 +63,12 @@
        
         document.getElementById("result").value=parseFloat(r);
         }
+
+        function openLink() {
+            var url = "https://github.com/anuragparashar26/";
+            window.open(url, '_blank');
+        }
+
         </script>
 
         <style>
@@ -87,6 +93,21 @@
             font-size: 24px;
             margin-bottom: 20px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+            #f {
+            color: #000000;
+            background-color: #b6ab9d62;
+            font-size: 15px;
+            margin-bottom: 0 auto;
+            font-family: Arial;
+            text-decoration: underline;
+        }
+
+        #f:hover {
+            color: red;
+            text-decoration: none;
         }
         
         label {
@@ -169,5 +190,6 @@
                 <input type="text" id="result" disabled>
             </form>
         </div>
+        <input type="button" value="By @Anurag P" id="f" onclick="openLink()">
     </body>
     </head></html>
