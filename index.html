@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>2023 CGPA Calculator</title>
+        <title>CGPA Calculator</title>
+        <link rel="icon" type="images/png" href="https://icons.iconarchive.com/icons/froyoshark/enkel/256/Calculator-icon.png" />
+
 
         <script>
             function marks(m)
@@ -80,13 +82,23 @@
         
         #calc-container {
             background-color: #a8d89f;
-            padding: 60px;
-            border-radius: 10px;
+            padding-right: 60px;
+            padding-left: 50px;
+            padding-top: 20px;
+            border: 2px solid;
+            border-radius: 15px;
             width: 300px;
             margin: 0 auto;
-            border: 2px solid
         }
 
+        #box {
+            background-color: #a8d89f;
+            border: 1px solid;
+            border-radius: 5px;
+            width: 300px;
+            margin: 0 auto;
+            padding: 10px;
+        }
         
         #h {
             color: #e74c3c;
@@ -103,6 +115,7 @@
             margin-bottom: 0 auto;
             font-family: Arial;
             text-decoration: underline;
+            cursor: pointer;
         }
 
         #f:hover {
@@ -132,7 +145,6 @@
             color: #fff;
             font-size: 18px;
             padding: 10px 0;
-            border: none;
             border-radius: 5px;
             cursor: pointer;
         }
@@ -152,43 +164,101 @@
     <body>
         <div id="calc-container">
             <h1 id="h">SGPA/CGPA CALCULATOR</h1>
+            <br>
             <form id="sgpa-form">
-                <label for="mat">Subject 1 Marks: </label>
+                <label for="sub1">Subject 1 Marks: </label>
                 <input type="text" id="sub1">
-                <label for="mat">Credits: </label>
-                <input type="text" id="4credit1">
-                <label for="che">Subject 2 Marks: </label>
+                <label for="sub1">Credits: </label>
+                <select name="Credits" id="4credit1">
+                    <option value="" selected>-- Select --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                <br><br>
+                <label for="sub2">Subject 2 Marks: </label>
                 <input type="text" id="sub2">
-                <label for="mat">Credits: </label>
-                <input type="text" id="4credit2">
-                <label for="psp">Subject 3 Marks: </label>
+                <label for="sub2">Credits: </label>
+                <select name="Credits" id="4credit2">
+                    <option value="" selected>-- Select --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                <br><br>
+                <label for="sub3">Subject 3 Marks: </label>
                 <input type="text" id="sub3">
-                <label for="mat">Credits: </label>
-                <input type="text" id="3credit1">
-                <label for="eln">Subject 4 Marks: </label>
+                <label for="sub3">Credits: </label>
+                <select name="Credits" id="3credit1">
+                    <option value="" selected>-- Select --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                <br><br>
+                <label for="sub4">Subject 4 Marks: </label>
                 <input type="text" id="sub4">
-                <label for="mat">Credits: </label>
-                <input type="text" id="3credit2">
-                <label for="eme">Subject 5 Marks: </label>
+                <label for="sub4">Credits: </label>
+                <select name="Credits" id="3credit2">
+                    <option value="" selected>-- Select --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                <br><br>
+                <label for="sub5">Subject 5 Marks: </label>
                 <input type="text" id="sub5">
-                <label for="mat">Credits: </label>
-                <input type="text" id="3credit3">
-                <label for="chel">Subject 6 Marks: </label>
+                <label for="sub5">Credits: </label>
+                <select name="Credits" id="3credit3">
+                    <option value="" selected>-- Select --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                <br><br>
+                <label for="sub6">Subject 6 Marks: </label>
                 <input type="text" id="sub6">
-                <label for="mat">Credits</label>
-                <input type="text" id="1credit1">
-                <label for="cpl">Subject 7 Marks: </label>
+                <label for="sub6">Credits: </label>
+                <select name="Credits" id="1credit1">
+                    <option value="" selected>-- Select --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                <br><br>
+                <label for="sub7">Subject 7 Marks: </label>
                 <input type="text" id="sub7">
-                <label for="mat">Credits: </label>
-                <input type="text" id="1credit2">
-                <label for="egh">Subject 8 Marks: </label>
+                <label for="sub7">Credits: </label>
+                <select name="Credits" id="1credit2">
+                    <option value="" selected>-- Select --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                <br><br>
+                <label for="sub8">Subject 8 Marks: </label>
                 <input type="text" id="sub8">
-                <label for="sfh">Credits: </label>
-                <input type="text" id="1credit3">
+                <label for="sub8">Credits: </label>
+                <select name="Credits" id="1credit3">
+                    <option value="" selected>-- Select --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                <br><br>
                 <input type="button" value="Calculate" id="calc" onclick="calculate()">
-                <p style="color: #e74c3c; font-size: large">Your CGPA/SGPA is</p>
+                <p style="color: #e74c3c; font-size: large">Your CGPA/SGPA is:</p>
                 <input type="text" id="result" disabled>
             </form>
+            <br>
         </div>
         <input type="button" value="By @Anurag P" id="f" onclick="openLink()">
     </body>
