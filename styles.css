@@ -6,12 +6,10 @@ body {
 
 #calc-container {
     background-color: #a8d89f;
-    padding-right: 70px;
-    padding-left: 50px;
-    padding-top: 20px;
+    padding: 20px 50px 20px 50px;
     border: 2px solid;
     border-radius: 15px;
-    width: 300px;
+    width: 280px;
     margin: 0 auto;
 }
 
@@ -20,22 +18,6 @@ body {
     font-size: 24px;
     margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-    #f {
-    color: #000000;
-    background-color: #b6ab9d62;
-    font-size: 15px;
-    margin-bottom: 0 auto;
-    font-family: Arial;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-#f:hover {
-    color: red;
-    text-decoration: none;
 }
 
 label {
@@ -52,7 +34,7 @@ input {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    width: 100%;
+    width: 80%;
 }
 
 #calc {
@@ -73,4 +55,21 @@ input {
     padding: 10px;
     width: 100%;
     margin-top: 10px;
+}
+a.github-link {
+    background-color: #ffffffa4;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: auto;
+    padding: 10px;
+}
+
+a.github-link:hover {
+    color: red;
+}
+
+img.github-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
 }
