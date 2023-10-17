@@ -23,6 +23,6 @@ function calculate() {
         }
     }
 
-    var sgpa = totalCredits > 0 ? (totalMarks / totalCredits).toFixed(2) : "N/A";
+    var sgpa = totalCredits > 0 ? (totalMarks / totalCredits).toFixed(3) : "N/A";
     document.getElementById("result").value = sgpa;
 }
