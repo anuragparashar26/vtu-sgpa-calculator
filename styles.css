@@ -78,3 +78,46 @@ img.github-icon {
     height: 20px;
     vertical-align: bottom;
 }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.additional-subject {
+    margin-top: 15px;
+    background-color: #a8d89f;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+select {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#add-subject {
+    background-color: #27ae60;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#remove-subject {
+    background-color: #e74c3c; 
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+}
